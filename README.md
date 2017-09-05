@@ -19,6 +19,7 @@ If something goes wrong or is hard to understand, be sure to contact us at [ni@a
 1. [Requirements](#requirements)
 2. [Structure](#structure)
 3. [Adding CUTE to the Project](#adding-cute-to-the-project)
+3. [Useful Information](#useful-information)
 4. [Understanding CMakeLists.txt](#understanding-cmakeliststxt)
 
 ## Requirements
@@ -66,7 +67,6 @@ To do that, on 'Project' file explorer, right-click the cute_lib folder and mark
 
 * More folders can be created inside the `src` directory since they are all included automatically.
 * The `Test.cpp` file can be deleted and changed, it is just an example. However, it is mandatory that there is a `.cpp` file with a `main` function.
-
 
 
 ## Understanding CMakeLists.txt
