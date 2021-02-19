@@ -1,6 +1,6 @@
-#include "../cute/cute.h"
-#include "../cute/ide_listener.h"
-#include "../cute/cute_runner.h"
+#include "cute.h"
+#include "ide_listener.h"
+#include "cute_runner.h"
 
 
 void test(){
