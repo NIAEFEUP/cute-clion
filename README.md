@@ -43,21 +43,20 @@ cute-clion
 
 ## Adding CUTE to the Project
 
-Now, from the downloaded CUTE Standalone, copy the `cute` folder (which includes `cute.h` and the other `cute_...` header files) to the project alongside the `src/` folder.
+Now, you must add the CUTE library to the project. Just extract the download file to your project directory, alongside the `src/` folder.
 The structure should look like this afterwards:
 
 ```
 cute-clion
 |-- CMakeLists.txt
-|-- cute    # added folder from CUTE-master download
-|   |-- cute.h 
+|-- cute_lib    # added folder
 |   |-- ... (omitted files)
 `-- src
     `-- Test.cpp
 ```
 
-After having achieved the structure above, we need to tell CLion to use `cute_lib` to add CUTE functions to its suggestions system.
-To do that, on 'Project' file explorer, right-click the cute_lib folder and mark the directory as 'Library Files', as seen below.
+After having achieved the structure above, we need to tell CLion to use `cute` to add CUTE functions to its suggestions system.
+To do that, on 'Project' file explorer, right-click the `cute` folder and mark the directory as 'Library Files', as seen below.
 
 ![Mark Directory as Library Files](clion_add_cute_lib.png)
 
@@ -78,7 +77,7 @@ Let's take a closer look.
 ```
 1  cmake_minimum_required(VERSION 3.8)      
 2  project(clion)                          
-3  include_directories(cute_lib)          
+3  include_directories(cute)          
 4  file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 5  add_executable(clion ${SOURCE_FILES})     
 ```
