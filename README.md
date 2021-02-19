@@ -43,7 +43,7 @@ cute-clion
 
 ## Adding CUTE to the Project
 
-Now, from the downloaded CUTE Standalone, copy the `cute` folder (that includes `cute-h` and other `cute_..` files) to the project alongside the `src/` folder.
+Now, from the downloaded CUTE Standalone, copy the `cute` folder (which includes `cute.h` and the other `cute_...` header files) to the project alongside the `src/` folder.
 The structure should look like this afterwards:
 
 ```
