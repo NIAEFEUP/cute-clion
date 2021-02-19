@@ -43,13 +43,14 @@ cute-clion
 
 ## Adding CUTE to the Project
 
-Now, you must add the CUTE library to the project. Just extract the download file to your project directory, alongside the `src/` folder.
+Now, from the downloaded CUTE Standalone, copy the `cute` folder (which includes `cute.h` and the other `cute_...` header files) to the project alongside the `src/` folder.
 The structure should look like this afterwards:
 
 ```
 cute-clion
 |-- CMakeLists.txt
-|-- cute_lib    # added folder
+|-- cute    # added folder from CUTE-master download
+|   |-- cute.h 
 |   |-- ... (omitted files)
 `-- src
     `-- Test.cpp
