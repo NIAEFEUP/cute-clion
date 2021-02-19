@@ -10,8 +10,8 @@ Be sure to check the [.gitignore](.gitignore) file in order to keep unwanted (an
 
 
 The following tutorial was made and test with the following software:
-* CLion 2017.2.2 #CL-172.3968.17 
-* CUTE Standalone v2.0.0
+* CLion 2020.3.2 (Build 203.7148.70)
+* CUTE Standalone v2.2.6 (14 Oct 2019)
 
 If something goes wrong or is hard to understand, be sure to contact us at [ni@aefeup.pt](mailto:ni@aefeup.pt), message us on [Facebook](www.facebook.com/niaefeup) or submit a pull request here!
 
@@ -26,7 +26,7 @@ If something goes wrong or is hard to understand, be sure to contact us at [ni@a
 
 For this to work, we need to install the following programs:
 * [CLion](https://www.jetbrains.com/clion/)
-* [CUTE Standalone](http://cute-test.com/projects/cute/wiki/CUTE_Standalone)
+* [CUTE Standalone](https://cute-test.com/installation/), which has a link to the [CUTE-Repo on GitHub](https://github.com/PeterSommerlad/CUTE)
 
 
 ## Structure
