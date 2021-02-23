@@ -34,4 +34,4 @@
 # IntelliJ
 .idea/*
 cmake-build-debug/*
-cute_lib/*
+cute/*
