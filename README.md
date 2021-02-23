@@ -31,28 +31,30 @@ For this to work, we need to install the following programs:
 
 ## Structure
 
-This step is not needed if you cloned the repository. Otherwise, you need to create the following structure:
+This step is not needed if you cloned the repository. Otherwise, you need to create the following structure in your project:
 
 ```
 cute-clion          
 |-- CMakeLists.txt  # compilation instructions
 `-- src             # source code directory/folder
-    `-- Test.cpp     
+    `-- Test.cpp    # example with tests
 ```
 
 
 ## Adding CUTE to the Project
 
-Now, you must add the CUTE library to the project. Just extract the download file to your project directory, alongside the `src/` folder.
-The structure should look like this afterwards:
+Now, from the downloaded CUTE Standalone, copy the `cute` folder (which includes `cute.h` and the other `cute_...` header files) to the project alongside the `src/` folder.
+
+The structure of your project should look like this afterwards:
 
 ```
 cute-clion
 |-- CMakeLists.txt
-|-- cute_lib    # added folder
+|-- cute    # added folder from CUTE-master download
+|   |-- cute.h 
 |   |-- ... (omitted files)
 `-- src
-    `-- Test.cpp
+    `-- Test.cpp 
 ```
 
 After having achieved the structure above, we need to tell CLion to use `cute` to add CUTE functions to its suggestions system.
@@ -60,13 +62,17 @@ To do that, on 'Project' file explorer, right-click the `cute` folder and mark t
 
 ![Mark Directory as Library Files](clion_add_cute_lib.png)
 
+
 #### Now, everything should work as intended!
 
 
-## Useful Information
+
+## Useful Information / Troubleshooting
 
 * More folders can be created inside the `src` directory since they are all included automatically.
 * The `Test.cpp` file can be deleted and changed, it is just an example. However, it is mandatory that there is a `.cpp` file with a `main` function.
+* If you have problems, marking `cute` as library in clion, delete the hidden `.idea` folder and restart clion and retry it
+* If you have compilation errors regarding `boost`, make sure cmake is using a version never than c++11, by adding this line `set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")` to the `CMakeLists.txt` file. [More info](https://intellij-support.jetbrains.com/hc/en-us/community/posts/206542459-How-to-enforce-a-specific-C-standard)
 
 
 ## Understanding CMakeLists.txt
@@ -88,3 +94,7 @@ Explanation:
 3. This line includes the CUTE library in the compilation process, allowing us to use its functionality;
 4. The `file` instruction will get all filenames that match the `src/*.cpp` pattern and join them all in the `SOURCE_FILES` variable;
 5. This function creates the executable from the project name provided in the second line and all the files in the `SOURCE_FILES` variable.
+
+## Not happy?
+If this was not what you were looking for, check out this picture of a `cute sea lion`. I hope this helps..
+![cute sea lion](cute_sea_lion.jpg)
